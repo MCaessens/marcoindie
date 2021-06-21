@@ -1,0 +1,57 @@
+:root{
+    --gray:  rgb(26, 26, 26);
+}
+body, html{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+body{
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "head"
+    "content"
+    "foot";
+    grid-template-rows: max-content auto max-content;
+    color: white;
+}
+header{
+    grid-area: head;
+    background-color: var(--gray);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: rgb(0, 0, 0) 0 5px 30px;
+}
+main{
+    grid-area: content;
+}
+footer{
+    grid-area: foot;
+    background-color: var(--gray);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 -5px 30px;
+}
+footer div{
+    padding: 20px;
+}
+.logo{
+    margin-left: 20px;
+    float: left;
+    padding: 25px 0;
+}
+.nav-links{
+    float: right;
+    margin: 0 0 0 20px;
+    padding: 25px 0;
+}
+.nav-links a{
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+nav{
+    height: 100%;
+    width: 100%;
+}
