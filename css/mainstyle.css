@@ -1,3 +1,7 @@
+@font-face {
+    font-family: dpcomic;
+    src: url("fonts/dpcomic.ttf");
+}
 :root{
     --gray:  rgb(26, 26, 26);
 }
@@ -5,6 +9,8 @@ body, html{
     height: 100vh;
     padding: 0;
     margin: 0;
+    font-family: dpcomic;
+    background-color: rgb(48, 48, 48);
 }
 body{
     text-align: center;
@@ -19,9 +25,9 @@ body{
 header{
     grid-area: head;
     background-color: var(--gray);
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    box-shadow: rgb(0, 0, 0) 0 5px 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgb(0, 0, 0) 0 5px 25px;
 }
 main{
     grid-area: content;
@@ -29,9 +35,9 @@ main{
 footer{
     grid-area: foot;
     background-color: var(--gray);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.6) 0 -5px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 -5px 25px;
 }
 footer div{
     padding: 20px;
@@ -40,6 +46,7 @@ footer div{
     margin-left: 20px;
     float: left;
     padding: 25px 0;
+    font-size: 30px;
 }
 .nav-links{
     float: right;
