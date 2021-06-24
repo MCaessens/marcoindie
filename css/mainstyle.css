@@ -23,7 +23,7 @@ body{
     grid-template-rows: max-content auto max-content;
     color: white;
 }
-header{
+nav{
     grid-area: head;
     background-color: var(--gray);
     border-bottom-left-radius: 20px;
